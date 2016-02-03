@@ -1,18 +1,94 @@
 \documentclass[12pt]{article}
-
-    \addtolength{\oddsidemargin}{-0.875in}
-    \addtolength{\evensidemargin}{-0.875in}
-    \addtolength{\textwidth}{1.75in}
-    \addtolength{\topmargin}{-0.875in}
-    \addtolength{\textheight}{1.75in}
-
-\title{ASTR 670: Project 1}
-\author{Laurel Farris}
-\date{03 February 2016}
+\usepackage[margin=1in]{geometry}
+%\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\pagenumbering{gobble}
+\rhead{03 February 2016}
+\chead{ASTR 670 - Project 1}
+\lhead{Laurel Farris}
 
 \begin{document}
-\maketitle
 
-Here is the beginning of my report.
+\begin{center}\large\textbf{
+``Nonthermally Dominated Electron Acceleration during Magnetic
+Reconnection in a Low-\boldmath$\beta$ Plasma''}
+\end{center}
+
+% The question being studied
+\noindent The primary physical phenomenon addressed by the authors is the
+acceleration of particles, specifically the mechanism by which
+electrons and protons with nonthermal energies are accelerated
+in regions of magnetic reconnection.
+Emission from solar flares has indicated that
+these energies, are considerably higher than thermal energies, and
+it is unclear exactly how they are obtaining such high energies.
+Two mechanisms had been previously explored:
+the \emph{Fermi} mechanism (need source)
+and direct acceleration (another source).
+In the past, low-$\beta$ simulations were difficult to produce
+(presumably because of a lack of compuational ability)
+so the authors investigated $\beta$ values between 0.007 and 0.2.
+The particles were modeled in a ``fully relativistic manner'',
+whatever that means.\\
+
+%The proposed data and method of study
+%Kinetic simulations, low $\beta$ regime, power law dist,
+\noindent 
+Hoping to obtain a power-law model to match observations, this
+problems was investigated using kinetic simulations in a code 
+that solved Maxwell's
+equations, namely, Ampere's law. Starting with certain initial
+conditions: equal values of $\beta$ for both electrons and protons, a
+mass ratio of ions (protons) to electrons of 25, and Maxwellian speed
+distributions all around, magnetic reconnection was induced by adding
+a wavelength perturbation, and changing $\beta$ as a function of the
+electron plasma frequency (source) and the electron gyrofrequency
+(source). This was done for four different values of $\beta$,
+which were determined somehow.
+The results from these simulations included the rate at which energy
+was transformed from magnetic energy before reconnection to nonthermal
+energy after reconnection. 
+\\
+
+%The main result
+\noindent After plotting all the plots that they plotted, the authors
+concluded with two main constraints on the production of ``power-law
+electron distribution'' (need to word this better). The first is that
+the reconnection process itself requires a timescale of around
+something in order for the electrons to aquire the resulting
+distribution. Second, the $\beta$ parameter has to be sufficiently
+low, qualitatively meaning that the magnetic pressure dominates the
+thermal pressure by a factor of something. As $\beta$ is expressed by
+    $$ \beta = \frac{P_{th}}{P_{mag}} = \frac{nk_BT}{B/8\pi}
+        \propto \frac{n}{B}$$
+its value could be lowered either by decreasing the particle number
+density ($n$) or increasing the strength of the magnetic field ($B$).
+The temperature was also an adjustable parameter, but was not found to
+have much of an effect on $\beta$, nor did the size of the system used
+during the simulations. This makes sense, as we learned in
+class that the low power of T compared to B means that B dominates.
+(source: class notes? look this up!). 
+As shown in figure 1(d), the lower $\beta$ values result in a greater
+energy increase: a difference of more than ten times the original
+kinetic energy for the lowest value of 0.007. 
+The \emph{Fermi} mechanism was found to be the dominant accelerator.
+The low values of $\beta$ produced the power-law energy
+distribution, where said energy came from the conversion of the magnetic
+energy that was present before reconnection to the nonthermal energy
+possessed by the electrons after reconnection.
+These findings may help to expain the electron acceleration present in
+major events such as solar flares and the magnetosphere of the Earth.
+
+\newpage
+\noindent In section 2, the authors mention that they carried out their
+simulations using a code that solves Maxwell's equations. Using what
+you know about Maxwell's equations, which one(s) do you think they
+needed to solve, and why?\\
+
+\noindent In section 4, the authors mention that the results may be
+influenced by three-dimensional instabilities, such as the kink
+instability. What is the kink instability? Why might it have an effect
+on the science being done here?
 
 \end{document}
