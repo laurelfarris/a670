@@ -3,7 +3,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \pagenumbering{gobble}
-\rhead{03 February 2016}
+\rhead{10 February 2016}
 \chead{ASTR 670 - Project 1}
 \lhead{Laurel Farris}
 
@@ -16,35 +16,34 @@
 ``Nonthermally Dominated Electron Acceleration during Magnetic
 Reconnection in a Low-\boldmath$\beta$ Plasma''}
 \end{center}
-The primary physical phenomenon addressed by the authors is the
-acceleration of particles, specifically the mechanism by which
-electrons and protons with nonthermal energies are accelerated
-in regions of magnetic reconnection.
-Emission from solar flares has indicated that
-these energies, are considerably higher than thermal energies, and
-it is unclear exactly how they are obtaining such high energies.
-Two mechanisms had been previously explored:
-the \emph{Fermi} mechanism (need source)
-and direct acceleration (another source).
+% The question being studied
+The primary question addressed in this work was the
+efficient mechanism by which particle energies are converted
+almost completely
+from thermal to nonthermal energy, and subsequently accelerated.
+This energy conversion takes place in regions of magnetic
+reconnection, with a relatively low plasma $\beta$ parameter. 
+Two possible mechanisms thought to drive these accelerations were
+the \emph{Fermi} mechanism,
+and direct acceleration.
 In the past, low-$\beta$ simulations were difficult to produce
 (presumably because of a lack of compuational ability)
 so the authors investigated $\beta$ values between 0.007 and 0.2.
-The particles were modeled in a ``fully relativistic manner'',
-whatever that means.
+The particles were modeled in a ``fully relativistic manner''.
 
 %The proposed data and method of study
 %Kinetic simulations, low $\beta$ regime, power law dist,
-Hoping to obtain a power-law model to match observations, this
-problems was investigated using kinetic simulations in a code 
-that solved Maxwell's
-equations, namely, Ampere's law. Starting with certain initial
-conditions: equal values of $\beta$ for both electrons and protons, a
-mass ratio of ions (protons) to electrons of 25, and Maxwellian speed
-distributions all around, magnetic reconnection was induced by adding
+These
+questions were investigated by running kinetic simulations with the
+`VPIC' code.
+Initial conditions included
+equal values of $\beta$ for both electrons and protons,
+and Maxwellian speed distributions, characteristic of (initially)
+thermal particles.
+Magnetic reconnection was induced by adding
 a wavelength perturbation, and changing $\beta$ as a function of the
-electron plasma frequency (source) and the electron gyrofrequency
-(source). This was done for four different values of $\beta$,
-which were determined somehow.
+electron plasma frequency and the electron gyrofrequency
+This was done for four different values of $\beta$.
 The results from these simulations included the rate at which energy
 was transformed from magnetic energy before reconnection to nonthermal
 energy after reconnection. 
