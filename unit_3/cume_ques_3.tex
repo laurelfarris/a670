@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{mdwlist}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\pagenumbering{gobble}
+\rhead{21 March 2016}
+\chead{ASTR 670 --- Project 2 (cume question)}
+\lhead{Laurel Farris}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.75em}
+
+\begin{document}
+Constants and conversions that may or may not be helpful:
+\begin{itemize*}
+    \item Boltzman's constant: k = $1.38\times10^{-16}$
+    \item 1 Joule (J) = $10^7$ erg
+\end{itemize*}
+
+\newpage
+\begin{enumerate}
+    \item This question probes your knowledge of solar flares.
+        \begin{enumerate}
+            \item \textbf{3 points:} The authors use a certain notation to
+                describe the different classes of flares; for example, in
+                \S 1, they mention \emph{GOES} class C1-, M1-, and X1-flares.
+                In general, what does this notation mean
+                (in other words, what does each of the terms represent),
+                and how does each class relate to the others?
+
+                {\small \underline{Answer}: Solar flares are divided
+                into five classes: A, B, C, M, and X. These classes are
+                scaled logarithmically; for instance, a class C flare has
+                10$\times$ more energy than a class B flare, and
+                100$\times$ more energy than a class A flare, etc.\ The
+                classes are further subdivided into categories 1--9.
+
+                (\emph{1 point for the classes A, B, C, M, and X\@; 1 point
+                for knowing the logarithmic scale; 1 point for knowing
+                the subcategories 1--9})}.
+
+            \item \textbf{5 points:} The authors state that the total
+                \emph{non}-thermal electron
+                energy is on the order of $10^{25}$ joules. Calculate the
+                temperature this energy would correspond to if it was
+                \emph{thermal} energy, and explain why this value is not
+                reasonable. (Estimate the number density of electrons in the
+                corona to be $n_e \sim$ $10^{10}$ cm$^{-3}$, and use a flare
+                volume of $V \sim$ $10^{28}$ cm$^3$).
+
+                {\small \underline{Answer}: Using the equation for thermal
+                    energy density: $\frac{E}{V} = 3nkT$, and converting energy
+                    from joules to ergs, solve for $T$:
+                    \begin{align*}
+                        T &= \frac{E}{3Vnk}\\
+                        &= \frac{10^{32}}{3(10^{28})(10^{10})(1.68\times10^{-16})}\\
+                        &= \ \approx 2.415\times10^{9}
+                    \end{align*}
+                    We do not observe temperatures this high in the corona
+                    (the highest is $\sim$ 10$^{6}$ K), so
+                    the energy cannot be thermal.
+
+                    (\emph{3 points for knowing the equation for thermal energy,
+                        2 points for the explanation}).}
+
+            \item \textbf{2 points:} In \S 4, the authors mention that events with ``unusually
+                high electron energy'' have been shown to be efficient particle
+                accelerators. What is the significance of this statement,
+                as it applies to solar physics in general?
+
+                {\small \underline{Answer}: One of the biggest questions in
+                solar physics is what drives the solar wind and
+                the heating of the corona. The source of particle acceleration
+                has been extensively studied, but is not firmly conclusive.
+
+                (\emph{1 point for addressing the coronal heating problem, and 1
+                for the source of the solar wind, though credit for other answers
+                is also possible}).}
+        \end{enumerate}
+\end{enumerate}
+
+\newpage
+Grading scheme
+
+\end{document}
