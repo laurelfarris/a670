@@ -17,31 +17,50 @@ Constants and conversions that may or may not be helpful:
 \begin{itemize*}
     \item Boltzmann constant: k = $1.38\times10^{-16}$ erg K$^{-1}$
     \item 1 Joule (J) = $10^{7}$ erg
+    \item sound speed: $c_s = \sqrt{\frac{\gamma{P}}{\rho}}$;
+        $\gamma$ = $\frac{5}{3}$
+    \item ideal gas law: $P = nkT = \frac{\rho{kT}}{m_u{\mu}}$
 \end{itemize*}
 
 % Solutions and Answers. Copy to first page and delete answers as soon
 % as you're finished.
-\newpage
 
 \begin{enumerate}
-    \item This question $\ldots$
+    %\item \textbf{x points total}
+    %\item This question $\ldots$
         \begin{enumerate}
-            \item \textbf{x points:}
+            \item \textbf{2 points:} In one or two sentences, explain
+                qualitatively what the scale height is.
+
+                {\small\underline{Answer}: The scale height is the distance
+                    over which a quantity decreases by a factor of $1/e$.
+
+                (\emph{1 point for something about a quantity changing over
+                a distance, 1 point for knowing the dropoff is exponential.})}
+
+            \item \textbf{3 points:} \S{} 2.1 gives the pressure scale
+                height as $H_{P} = c^2/(\gamma{g})$. Show that this is
+                equal to $H = kT/m_{u}g$.
+
                 {\small\underline{Answer}:
-                (\emph{grading scheme})}
-            \item \textbf{x points:}
-                {\small\underline{Answer}:
-                (\emph{grading scheme})}
-            \item \textbf{x points:}
-                {\small\underline{Answer}:
-                (\emph{grading scheme})}
-            \item \textbf{x points:}
-                {\small\underline{Answer}:
-                (\emph{grading scheme})}
-            \item \textbf{x points:}
-                {\small\underline{Answer}:
-                (\emph{grading scheme})}
+                    Using the sound speed $c_s = \sqrt{\frac{\gamma{P}}{p}}$,
+                    \begin{align*}
+                        H &= \frac{c_s^2}{\gamma{g}} \\
+                          &= \frac{(\gamma{P}/\rho)}{\gamma{g}} \\
+                         &= \frac{P}{\rho{g}} \\
+                         &= \frac{\rho{kT}}{m_u\rho{g}} \\
+                         &= \frac{kT}{m_u{g}}
+                    \end{align*}
+
+                (\emph{2 points for using correct equations (if math errors
+                led to wrong expression), 1 more for deriving
+                correct expression.})}
+
         \end{enumerate}
 \end{enumerate}
 
+
+%\begin{enumerate}
+%    \item This question probes your knowledge of wave analysis
+%\end{enumerate}
 \end{document}
