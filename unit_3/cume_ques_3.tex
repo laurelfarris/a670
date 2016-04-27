@@ -5,7 +5,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \pagenumbering{gobble}
-\rhead{?? April 2016}
+\rhead{25 April 2016}
 \chead{ASTR 670 --- Project 3 (cume question)}
 \lhead{Laurel Farris}
 
@@ -20,47 +20,77 @@ Constants and conversions that may or may not be helpful:
     \item sound speed: $c_s = \sqrt{\frac{\gamma{P}}{\rho}}$;
         $\gamma$ = $\frac{5}{3}$
     \item ideal gas law: $P = nkT = \frac{\rho{kT}}{m_u{\mu}}$
+    \item solar mass: $M_{\odot} = 2\times10^{33}$ g
+    \item solar radius: $R_{\odot} = 6.96\times10^{10}$ cm
+    \item gravitational constant: $G = 6.67\times10^{-8}$ cm$^{3}$ g$^{-1}$ s$^{-2}$
+    \item gravitational force: $\vec{F}_{g} = m\vec{g} = \frac{GMm}{r^{2}}\hat{r}$
+    \item pressure scale height: $H = \frac{kt}{m_{u}g}$
 \end{itemize*}
 
-% Solutions and Answers. Copy to first page and delete answers as soon
-% as you're finished.
+\begin{enumerate}
+\item This question addresses the concepts and calculations of the scale height.
+\begin{enumerate}
+    \item \textbf{2 points:} In one or two sentences, explain
+        qualitatively what the scale height is.
 
+    \item \textbf{4 points:} \S{} 2.1 gives the pressure scale
+        height as $H_{P} = c^{2}/(\gamma{g})$. Show that this is
+        equal to $H = kT/m_{u}g$. State any assumptions you make.
+
+    \item \textbf{5 points:} Using the expression given for scale
+        height ($H_{P} = c^{2}/(\gamma{P})$) and the values given at
+        the bottom of the second column of page 2, calculate the
+        scale height at the photosphere (the visible surface of
+        the sun). If you don't know $g$, use $10^{4}$.
+        Does your answer make sense? Why or why not?
+
+    %\item \textbf{x points:} 
+\end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}
+\item \emph{Solutions}
 \begin{enumerate}
     \item \textbf{2 points:} In one or two sentences, explain
         qualitatively what the scale height is.
 
         {\small\underline{Answer}: The scale height is the distance
             over which a quantity decreases by a factor of $1/e$.
+            This was in the paper!
 
-        (\emph{1 point for something about a quantity changing over
+        (\emph{1 point for something about a quantity decreasing over
         a distance, 1 point for knowing the dropoff is exponential.})}
 
-    \item \textbf{3 points:} \S{} 2.1 gives the pressure scale
+    \item \textbf{4 points:} \S{} 2.1 gives the pressure scale
         height as $H_{P} = c^{2}/(\gamma{g})$. Show that this is
-        equal to $H = kT/m_{u}g$.
+        equal to $H = kT/m_{u}g$. State any assumptions you make.
 
         {\small\underline{Answer}:
             Using the sound speed $c_s = \sqrt{\frac{\gamma{P}}{p}}$,
+            and the ideal gas law $P = \frac{\rho{kT}}{m_{u}}$
+            (assuming the chemical abundance, $\mu$, is equal to 1 in
+            the photosphere):
             \begin{align*}
-                H &= \frac{c_s^2}{\gamma{g}}\\
-                  &= \frac{(\gamma{P}/\rho)}{\gamma{g}}\\
-                 &= \frac{P}{\rho{g}}\\
-                 &= \frac{\rho{kT}}{m_{u}\rho{g}}\\
-                 &= \frac{kT}{m_{u}{g}}
+             H_{P} &= \frac{c_s^2}{\gamma{g}}\\
+                &= \frac{(\gamma{P}/\rho)}{\gamma{g}}\\
+                &= \frac{P}{\rho{g}}\\
+                &= \frac{\rho{kT}}{m_{u}\rho{g}}\\
+                &= \frac{kT}{m_{u}{g}}\\
             \end{align*}
+        (\emph{2 points for utilizing the correct equations
+        (even if conversion errors led to wrong expression), 1 more for deriving
+        correct expression, 1 for assuming $\mu=1$.})}
 
-        (\emph{2 points for using correct equations (if math errors
-        led to wrong expression), 1 more for deriving
-        correct expression.})}
-
-    \item \textbf{5 points:} Use the expression given for scale
+    \item \textbf{5 points:} Using the expression given for scale
         height ($H_{P} = c^{2}/(\gamma{P})$) and the values given at
         the bottom of the second column of page 2, calculate the
         scale height at the photosphere (the visible surface of
-        the sun). Does the number make sense? Why or why not?
+        the sun). If you don't know $g$, use $10^{4}$.
+        Does your answer make sense? Why or why not?
 
-        {\small\underline{Answer}: $c$ is given as 7.2 km s$^{-1}$ =
-            $7.2\times10^{5}$ cm s$^{-1}$.
+        {\small\underline{Answer}: 
             $g$ can be calculated from the equation for gravitational
             force:
             \begin{align*}
@@ -69,12 +99,29 @@ Constants and conversions that may or may not be helpful:
                    &= \frac{GM_{\odot}}{R_{\odot}^{2}}\\
                    &= \frac{(6.96\times10^{-8})(2\times10^{33})}
                        {{(6.96\times10)}^{2}}\\
-                   &= \sim 10^{7} \textrm{cm}\\
-                   &= 100 \textrm{km}\\
+                   &= 27442.78\ \textrm{cm\ s}^{-2}\\
             \end{align*}
-        }
-\end{enumerate}
+            $c_{s}$ is given as 7.2 km s$^{-1}$ = $7.2\times10^{5}$ cm s$^{-1}$.
+            Now solve for $H_{P}$:
+            \begin{align*}
+                H_{P} &= \frac{c^{2}}{\gamma{g}}\\
+                    &= \frac{(7.2)^2}{(5/3)27442.78}\\
+                   &=\ \sim 113.34\times10^{5}\ \textrm{cm}\\ 
+                   &=\ \sim 113\ \textrm{km}\\
+            \end{align*}
+            The sharp discontinuity at the photosphere indicates that the
+            density, and therefore pressure, falls off quite rapidly, so
+            one would expect a `relatively' low scale height.
+            (Compare this to the radius of the Earth, at $\sim$ 6300 km).
 
+        (\emph{2 points for correctly using the gravitational force to
+        get $g$, 2 points for calculating $H_{P}$ correctly,
+        2 points for explaining
+        why the answer does or does not make sense.})}
+
+    %\item \textbf{x points:} 
+\end{enumerate}
+\end{enumerate}
 
 %\begin{enumerate}
 %    \item This question probes your knowledge of wave analysis
